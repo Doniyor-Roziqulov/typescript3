@@ -40,18 +40,17 @@ const SinglePage: FC = () => {
                             />
                         </div>
                         <div className="flex flex-col gap-y-3 ml-2">
-                            {data.images.length > 1 &&
-                                data?.images?.map((e, inx) => (
-                                    <div
-                                        onClick={() => setUrl(inx)}
-                                        className="bg-[#1E73BE] border rounded-lg cursor-pointer">
-                                        <img
-                                            className="w-[120px] h-[120px] object-contain"
-                                            key={inx}
-                                            src={e}
-                                        />
-                                    </div>
-                                ))}
+                            {data?.images?.map((e, inx) => (
+                                <div
+                                    onClick={() => setUrl(inx)}
+                                    className="bg-[#1E73BE] border rounded-lg cursor-pointer">
+                                    <img
+                                        className="w-[120px] h-[120px] object-contain"
+                                        key={inx}
+                                        src={e}
+                                    />
+                                </div>
+                            ))}
                         </div>
                     </div>
                     <div>
