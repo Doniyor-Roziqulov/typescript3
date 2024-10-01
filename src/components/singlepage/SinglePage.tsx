@@ -13,6 +13,7 @@ const API_URL: string = "https://dummyjson.com/products/";
 const SinglePage: FC = () => {
     const { proId } = useParams<{ proId: string }>();
     const [data, setData] = useState<Products | null>(null);
+
     const [url, setUrl] = useState<number>(0);
 
     useEffect(() => {
